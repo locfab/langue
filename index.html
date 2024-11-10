@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprentissage Darija</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Apprendre le Darija</h1>
+        
+        <label for="language-select">Sélectionnez la langue :</label>
+        <select id="language-select">
+            <option value="fr">Français</option>
+            <option value="ar">Arabe</option>
+        </select>
+
+        <div id="word-display" class="word-display">
+            <p id="question-text"></p>
+            <p id="answer-text"></p>
+        </div>
+
+        <button id="toggle-button">Voir la réponse</button>
+        <button id="hint-button">Indice</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

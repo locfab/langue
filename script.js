@@ -57,7 +57,6 @@ function nextWord() {
 
 // Afficher la réponse complète ou passer au mot suivant
 function toggleAnswerOrNextWord() {
-    console.log(words)
     const word = words[currentWordIndex];
     const answerText = document.getElementById('answer-text');
 
@@ -65,7 +64,7 @@ function toggleAnswerOrNextWord() {
         // Montrer la réponse complète selon la langue sélectionnée
         answerText.textContent = currentLanguage === 'fr'
             ? `${word.ar} - ${word.phonetic}` // Si question en français, montrer arabe et phonétique
-            : `${word.fr}`; // Si question en arabe, montrer français et phonétique
+            : `${word.fr} - ${word.phonetic}`; // Si question en arabe, montrer français et phonétique
 
         answerText.style.color = 'black';
         document.getElementById('toggle-button').textContent = "Mot suivant";
